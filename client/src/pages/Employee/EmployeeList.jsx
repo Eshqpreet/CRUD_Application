@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { FaCirclePlus, FaSortAlphaDown, FaSortAlphaDownAlt } from "react-icons/fa";
+import { FaSortAlphaDown, FaSortAlphaDownAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { ToastContainer, toast } from 'react-toastify';
@@ -119,7 +119,7 @@ const EmployeeList = () => {
                     </button>
                     <Link to="/create">
                         <button className="px-4 py-2 text-white font-semibold bg-black hover:bg-gray-800 rounded-md flex items-center gap-2">
-                            New Employee <FaCirclePlus className="text-2xl" />
+                            New Employee 
                         </button>
                     </Link>
                 </div>
@@ -154,12 +154,12 @@ const EmployeeList = () => {
                                 <td className="border">
                                     <div className="flex items-center justify-evenly p-3">
                                         <Link to={`/update/${user._id}`}>
-                                            <button className="btn">Edit</button>
+                                            <button className="abtn">Edit</button>
                                         </Link>
                                         <Link to={{ pathname: `/employee/${user._id}` }}>
-                                            <button className="btn">View</button>
+                                            <button className="abtn">View</button>
                                         </Link>
-                                        <button className="btn w-16" onClick={(e) => handleDelete(user._id)}>
+                                        <button className="abtn w-16" onClick={(e) => handleDelete(user._id)}>
                                             Delete
                                         </button>
                                         <ToastContainer />
