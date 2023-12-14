@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    section {
+        @apply py-[75px]
+    }
+}
+
+
+@layer components {
+    .container {
+        @apply max-w-full w-[1440px] px-5 mx-auto
+    }
+
+    .tborder {
+        @apply border-solid border-[1.5px] border-[#000] 
+    }
+
+    .ltext{
+        @apply text-[15px] font-[500] text-[#000]
+    }
+
+    .form_label {
+        @apply text-[#4E545F] font-semibold text-[16px] mb-2 leading-7
+    }
+
+    .form_input {
+        @apply w-[45%] px-4 py-2 border-[1.55px] border-solid border-[#000] focus:outline-none focus:border-[#9377db] text-[16px] leading-7 text-[#000] placeholder:text-[#4E545F] cursor-pointer rounded-md
+    }
+
+    .abtn {
+        @apply border border-solid border-[#000] hover:bg-gray-800 font-semibold rounded-lg p-[3px] w-[50px] bg-black text-[15px] text-[#fff]
+    }
+}
